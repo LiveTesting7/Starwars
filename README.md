@@ -47,7 +47,43 @@ Open the project in Eclipse.
 **Appium Client Inspector**
 Ensure the Appium server is up and running and the emulator is in ready mode.
 
-### Running Tests
+## Importing and Running the Project in Eclipse IDE
+
+1. **Open Eclipse IDE:**
+Launch the Eclipse IDE.
+
+2. **Import the Project:**
+In Eclipse, go to `File` > `Import`.
+Select `Maven` > `Existing Maven Projects`.
+Click `Next`.
+
+3. Select the project directory:
+Browse and select the root directory of your cloned project (`starwars-appium`).
+Click `Finish`.
+
+4. **Verify Maven Dependencies:**
+Eclipse will automatically download and configure the Maven dependencies specified in the `pom.xml` file. Wait for this process to complete.
+
+5. Configure the Java Build Path:
+Right-click on the project in the `Project Explorer`.
+Select `Properties` > `Java Build Path`.
+Ensure the correct Java JDK is selected on the `Libraries` tab.
+
+6. **Run Configurations:**
+Right-click on the `TestNG` file (e.g., `testng.xml`) in the `src/test/resources` folder.
+Choose `Run As` > `TestNG Suite`.
+
+7. **Run the Tests:**
+After running the TestNG suite, you should see the test execution in the TestNG Results window.
+Alternatively, you can right-click on the test class (`LoginTest.java`) and select `Run As` > `TestNG Test`.
+
+8. View Test Reports:
+Test reports can be found in the `target/surefire-reports` directory.
+
+Congratulations! You have successfully imported and run the Appium automation project in the Eclipse IDE.
+
+
+### Running Tests in maven 
 
 Before running tests, make sure the Appium server is running and the emulator is ready. Follow these steps:
 
@@ -57,3 +93,5 @@ Verify that pom.xml is available.
 
 ### Run the following command:
 mvn clean test
+
+Congratulations! You have successfully imported and run the Appium automation project in the Command prompt.
